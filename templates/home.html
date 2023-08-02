@@ -72,7 +72,8 @@
           </div>
           <div>
             <h4>اجمالي الدعم المقدم من وزارة الإسكان</h4>
-            <p>{{ support }} </p>
+            <p><b>{{ support }}</b> </p>
+              <p><small>في حال اختيار منتج الدفعة المقدمة*</small></p>
           </div>
         </div>
       </div>
@@ -84,7 +85,7 @@
           </div>
           <div>
             <h4>القسط الشهري</h4>
-            <p>{{ monthlyPay|floatformat:1 }}</p>
+            <p><b>{{ monthlyPay|floatformat:0 }}</b></p>
           </div>
         </div>
       </div>
@@ -96,7 +97,8 @@
           </div>
           <div>
             <h4>اجمالي المبلغ الذي سيدفع للعقار</h4>
-            <p>{{ estatePrice }}</p>
+            <p><b>{{ estatePrice|floatformat:0 }}</b></p>
+              <p><small>هي قيمة العقار مضاف لها الفائدة*</small></p>
           </div>
         </div>
       </div>
@@ -108,7 +110,7 @@
           </div>
           <div>
             <h4>اجمالي الفائدة</h4>
-            <p>{{ intrstPrice }}</p>
+            <p><b>{{ intrstPrice|floatformat:0 }}</b></p>
           </div>
         </div>
       </div>
@@ -120,7 +122,7 @@
           </div>
           <div>
             <h4>نسبة الاستقطاع من مجموع الراتب</h4>
-            <p>{{ diff|floatformat:2 }}%</p>
+            <p><b>{{ diff|floatformat:2 }}%</b></p>
           </div>
         </div>
       </div>
@@ -132,7 +134,8 @@
           </div>
           <div>
             <h4>اجمالي المبلغ الذي سيدفع للبنك</h4>
-            <p>{{ totalPrice }}</p>
+            <p><b>{{ totalPrice|floatformat:0 }}</b></p>
+              <p><small>المبلغ المطلوب من البنك مضاف له الفائدة*</small></p>
           </div>
         </div>
       </div>
@@ -144,4 +147,19 @@
     {% endif %}
 
 </body>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
+        <!-- logo -->
+        <p> admin@ratecalcsa.com : للإقتراحات</p>
+      </div>
+      <!-- footer menu -->
+      <
+      <!-- footer social icon -->
+    </div>
+  </div>
+</footer>
+
 </html>
